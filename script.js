@@ -25,28 +25,26 @@
 
 // saudacao();
 // somar(4,5);
+function exercicio1() {
+    let somaExercicio1 = 0;
+    let continuarExercicio1 = true;
 
-function exercicio1(){
-    let soma = 0;
-    let continuar = true;
+    while (continuarExercicio1) {
+        let numeroExercicio1 = parseFloat(prompt("Digite um número (ou digite '0' para encerrar):"));
 
-    while(continuar){
-        let numero = parseFloat(prompt("Digite um número (ou digite '0' para encerrar): "));
-
-        if(isNaN(numero)){
+        if (isNaN(numeroExercicio1)) {
             alert("Por favor, digite um número válido!");
         } else {
-            soma += numero;
+            somaExercicio1 += numeroExercicio1;
         }
 
-        continuar = confirm("Deseja adicionar mais um número?");
+        continuarExercicio1 = confirm("Deseja adicionar mais um número?");
     }
 
-    alert("A soma dos números é: " + soma);
-    console.log("A soma dos números é: " + soma);
+    document.getElementById("resultado1").textContent = "A soma dos números é: " + somaExercicio1;
 }
 
-exercicio1();
+
 
 
 
