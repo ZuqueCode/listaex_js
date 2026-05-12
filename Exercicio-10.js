@@ -4,10 +4,10 @@ function folhaDePagamento() {
     let descontoINSS = salarioBruto * 0.08;
     let salarioLiquido = salarioBruto - descontoINSS;
 
-    console.log(`Nome: ${nome}`);
-    console.log(`Salário Bruto: R$ ${salarioBruto}`);
-    console.log(`Desconto INSS: R$ ${descontoINSS}`);
-    console.log(`Salário Líquido: R$ ${salarioLiquido}`);
+   document.getElementById("resultado").innerHTML = `
+        Nome: ${nome}<br>
+        Salário Bruto: R$ ${salarioBruto}<br>
+        Desconto INSS: R$ ${descontoINSS}<br>
+        Salário Líquido: R$ ${salarioLiquido}
+    `;
 }
-
-folhaDePagamento();

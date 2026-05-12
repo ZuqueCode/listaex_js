@@ -9,14 +9,13 @@ function balancoFinanceiro() {
         ganhoAnual += ganho;
         gastoAnual += gasto;
     }
-
-    let saldo = ganhoAnual - gastoAnual;
+let saldo = ganho - gasto;
     let resultado = saldo >= 0 ? "Lucro" : "Prejuízo";
 
-    console.log(`Ganho anual: R$ ${ganhoAnual}`);
-    console.log(`Gasto anual: R$ ${gastoAnual}`);
-    console.log(`Saldo anual: R$ ${saldo}`);
-    console.log(`Resultado: ${resultado}`);
+    document.getElementById("resultado").innerHTML = `
+        Ganho anual: R$ ${ganho} <br>
+        Gasto anual: R$ ${gasto} <br>
+        Saldo anual: R$ ${saldo} <br>
+        Resultado: ${resultado}
+    `;
 }
-
-balancoFinanceiro();

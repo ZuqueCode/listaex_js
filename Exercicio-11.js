@@ -12,9 +12,9 @@ function folhaDePagamentoComDescontoVariavel() {
 
     let salarioLiquido = salario - desconto;
 
-    console.log(`Salário informado: R$ ${salario}`);
-    console.log(`Desconto aplicado: R$ ${desconto}`);
-    console.log(`Salário líquido: R$ ${salarioLiquido}`);
+   document.getElementById("resultado").innerHTML = `
+        Salário informado: R$ ${salario}<br>
+        Desconto aplicado: R$ ${desconto}<br>
+        Salário líquido: R$ ${salarioLiquido}
+    `;
 }
-
-folhaDePagamentoComDescontoVariavel();

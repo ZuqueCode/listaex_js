@@ -4,10 +4,9 @@ function verificarVogalConsoante() {
     let vogais = ["a", "e", "i", "o", "u"];
 
     if (vogais.includes(letra.toLowerCase())) {
-        console.log("É uma vogal");
+        document.getElementById("resultado").textContent = "É uma vogal";
     } else {
-        console.log("É uma consoante");
+        document.getElementById("resultado").textContent = "É uma consoante";
     }
 }
 
-verificarVogalConsoante();

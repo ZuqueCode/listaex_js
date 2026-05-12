@@ -1,7 +1,7 @@
 function contagem_nasa(){
     for(let i = 10; i > 0; i--){
-        alert(i);
-    };
-
-    alert("Contagem Finalizada")
+        resultado += i + "<br>";
+    }
+    resultado += "Lançamento realizado!";
+    document.getElementById("resultado").innerHTML = resultado;
 }

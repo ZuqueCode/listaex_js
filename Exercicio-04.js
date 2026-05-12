@@ -7,7 +7,6 @@ function ordenarValores() {
     let numeros = [num1, num2, num3, num4];
     numeros.sort((a, b) => b - a);
 
-    console.log("Os números em ordem decrescente são: " + numeros);
+    document.getElementById("resultado").textContent = "Os números em ordem decrescente são: " + numeros;
 }
 
-ordenarValores();

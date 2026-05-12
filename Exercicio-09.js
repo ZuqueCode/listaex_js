@@ -3,10 +3,9 @@ function ordenarDoisNumeros() {
     let num2 = parseInt(prompt("Digite o segundo número:"));
 
     if (num1 > num2) {
-        console.log(`Os números em ordem decrescente são: ${num1}, ${num2}`);
+        document.getElementById("resultado").textContent = `Os números em ordem decrescente são: ${num1}, ${num2}`;
     } else {
-        console.log(`Os números em ordem decrescente são: ${num2}, ${num1}`);
+      document.getElementById("resultado").textContent = `Os números em ordem decrescente são: ${num2}, ${num1}`;  
     }
 }
 
-ordenarDoisNumeros();

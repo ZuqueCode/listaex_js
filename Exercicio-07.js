@@ -31,13 +31,12 @@ function sistemaDePrecos() {
             preco = 5.00;
             break;
         default:
-            console.log("Sabor inválido");
-            break;
+           document.getElementById("resultado").textContent = "Sabor inválido";
+            return;
     }
 
-    if (preco > 0) {
-        console.log(`Preço do picolé escolhido: R$ ${preco}`);
-    }
+    document.getElementById("resultado").textContent = `Preço do picolé escolhido: R$ ${preco}`;
 }
+    
 
-sistemaDePrecos();
+

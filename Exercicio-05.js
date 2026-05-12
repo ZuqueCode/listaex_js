@@ -3,11 +3,11 @@ function transformarParImpar() {
 
     if (numero % 2 === 0) {
         numero += 1;
-        console.log("Número transformado em ímpar: " + numero);
+        document.getElementById("resultado").textContent = "Número transformado em ímpar: " + numero;
     } else {
         numero -= 1;
-        console.log("Número transformado em par: " + numero);
+
+        document.getElementById("resultado").textContent = "Número transformado em par: " + numero;
     }
 }
 
-transformarParImpar();
